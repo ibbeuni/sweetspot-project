@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTS｜甜蜜點 the SweetSpot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <style>
+        @import url(./normalize.css);
+        @import url(./common.css);
+        @import url(./products.css);
+    </style>
+
+    <!-- 載入通用JaveScript -->
+    <script src="./common.js"></script>
+    <!-- 載入fontawesome kit's code -->
+    <script src="https://kit.fontawesome.com/4a8074f175.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- 設置與body重疊的div.wrapper，避免污染<body> -->
+    <div class="wrapper">
+        <!-- 設置header區塊，內包導覽列 -->
+        <header class="header" id="topNav">
+            <div class="header-container">
+                <div class="topnav">
+                    <div class="left-area">
+                        <a href="#Q-about">
+                            <div class="nav-btn">ABOUT Q胖</div>
+                        </a>
+                        <a href="#Q-story">
+                            <div class="nav-btn">Q胖 STORY</div>
+                        </a>
+                        <a href="#Q-products">
+                            <div class="nav-btn">PRODUCTS</div>
+                        </a>
+                    </div>
+                    <div class="logo">
+                        <a href="./homepage.html">
+                            <img src="./img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="right-area">
+                        <a href="">
+                            <div class="nav-btn">STORE</div>
+                        </a>
+                        <a href="">
+                            <div class="nav-btn">常見問題 Q&A</div>
+                        </a>
+                        <!-- 搜尋功能：全頁式 -->
+                        <div id="myOverlay" class="overlay">
+                            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                            <div class="overlay-content">
+                                <form action="">
+                                    <input type="text" placeholder="Search.." name="search">
+                                    <button type="submit">
+                                        <span class="material-symbols-rounded">
+                                            Search
+                                        </span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="nav-btn openBtn" onclick="openSearch()">
+                            <span class="material-symbols-rounded">
+                                Search
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- top按鈕 -->
+        <a href="#" class="back-to-top">
+            <div class="topBtn">
+                <i class="fa-solid fa-angle-up fa-2x"></i>
+            </div>
+        </a>
+        <!-- section-page-header -->
+        <div class="section-page-header">
+            <div class="page-header-container">
+                <div class="header-title">
+                    <h1 class="page-title">
+                        <span>PRODUCTS</span>
+                    </h1>
+                    <div class="site-map">
+                        <a href="./homepage.html" class="home">
+                            <span>HOME</span>
+                        </a>
+                        <span>・</span>
+                        <span>PRODUCTS</span>
+                    </div>
+                    <div class="sub-title">
+                        <span>營養分析及過敏原情報詳見商品內頁</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-nav">
+                <div class="product-nav-container">
+                    <a href="#best_sale">
+                        <div class="sub-nav-btn">熱門商品</div>
+                    </a>
+                    <a href="#bagel">
+                        <div class="sub-nav-btn">Ｑ胖貝果</div>
+                    </a>
+                    <a href="#bread">
+                        <div class="sub-nav-btn">真心吐司系列</div>
+                    </a>
+                    <a href="#tvlr-bread">
+                        <div class="sub-nav-btn">世界探索吐司系列</div>
+                    </a>
+                    <a href="#sweets">
+                        <div class="sub-nav-btn">日法式手作甜點</div>
+                    </a>
+                    <a href="">
+                        <div class="sub-nav-btn">甜蜜點中秋獻禮</div>
+                    </a>
+                    <a href="">
+                        <div class="sub-nav-btn">彌月專區</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <!-- section-best-sale -->
+            <div class="section-best-sale" id="best-sale">
+                <!-- section的container -->
+                <div class="container">
+                    <!-- 區塊標題區 -->
+                    <div class="section-header">
+                        <strong class="section-title">BEST SALE</strong>
+                    </div>
+                    <!-- section-bagel-body -->
+                    <div class="section-body">
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bagel/西雅圖焦糖海鹽摩卡核桃貝果.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">西雅圖焦糖海鹽摩卡核桃貝果</span></p>
+                                <p><span class="product-title">Salted Caramel Mocha & Walnut</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bagel/唐寧伯爵蜜桃奶油貝果.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">唐寧伯爵蜜桃奶油貝果</span></p>
+                                <p><span class="product-title">Crumble & Raisin</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bread/紫心甘藷吐司.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">紫心甘藷吐司</span></p>
+                                <p><span class="product-title">Purple Sweet Potato Fluffy Bread</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/tvlr-bread/芬蘭極境吐司.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">芬蘭極境吐司</span></p>
+                                <p><span class="product-title">Aurora Cream Bread</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- section-bagel -->
+            <div class="section-bagel" id="bagel">
+                <!-- section的container -->
+                <div class="container">
+                    <!-- 區塊標題區 -->
+                    <div class="section-header">
+                        <strong class="section-title">Q胖貝果</strong>
+                    </div>
+                    <!-- section-bagel-body -->
+                    <div class="section-body">
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bagel/特A加州葡萄奶酥貝果.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">特A加州葡萄奶酥貝果</span></p>
+                                <p><span class="product-title">Crumble & Raisin</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bagel/唐寧伯爵蜜桃奶油貝果.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">唐寧伯爵蜜桃奶油貝果</span></p>
+                                <p><span class="product-title">Crumble & Raisin</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bagel/墨西哥番茄辣起司貝果.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">墨西哥番茄辣起司貝果</span></p>
+                                <p><span class="product-title">Mexican Pizza</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bagel/阿嬤a芋泥肉脯貝果.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">阿嬤a芋泥肉脯貝果</span></p>
+                                <p><span class="product-title">Taro & Pork Floss</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bagel/經典原味貝果.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">經典原味貝果</span></p>
+                                <p><span class="product-title">Plain</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bagel/府城波霸奶茶貝果.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">府城波霸奶茶貝果</span></p>
+                                <p><span class="product-title">Tainan Bubble Tea</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bagel/西雅圖焦糖海鹽摩卡核桃貝果.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">西雅圖焦糖海鹽摩卡核桃貝果</span></p>
+                                <p><span class="product-title">Salted Caramel Mocha & Walnut</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bagel/濟州島柚子茶乳酪貝果.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">濟州島柚子茶乳酪貝果</span></p>
+                                <p><span class="product-title">Citron Tea & Cream Cheese</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bagel/黑糖蜜蜜貝果.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">黑糖蜜蜜貝果</span></p>
+                                <p><span class="product-title">Brown Sugar</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bagel/紅藜麥雜糧貝果.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">紅藜麥雜糧貝果</span></p>
+                                <p><span class="product-title">Red Quinoa, Nuts & Dried Fruits</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bagel/經典蔓越莓乳酪貝果.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">經典蔓越莓乳酪貝果</span></p>
+                                <p><span class="product-title">Cranberry & Cheddar</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bagel/紫薯芋頭貝果.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">紫薯芋頭貝果</span></p>
+                                <p><span class="product-title">Taro</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bagel/蕃茄羅勒起司貝果.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">蕃茄羅勒起司貝果</span></p>
+                                <p><span class="product-title">Tomato Basil & Cheddar</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bagel/黑糖紅豆麻糬貝果.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">黑糖紅豆麻糬貝果</span></p>
+                                <p><span class="product-title">Brown Sugar, Red Bean & Mochi</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bagel/雙層起司香料貝果.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">雙層起司香料貝果</span></p>
+                                <p><span class="product-title">Double Cheese & Spice</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bagel/黑胡椒起司火腿貝果.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">黑胡椒起司火腿貝果</span></p>
+                                <p><span class="product-title">Cheddar, Ham & Peppar</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bagel/爆餡芝麻貝果.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">爆餡芝麻貝果</span></p>
+                                <p><span class="product-title">Double Sesame</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bagel/巧克力豆豆貝果.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">巧克力豆豆貝果</span></p>
+                                <p><span class="product-title">Chocolate Mania</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bagel/宇治抹茶乳酪貝果.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">宇治抹茶乳酪貝果</span></p>
+                                <p><span class="product-title">Matcha & Cream Cheese</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bagel/宇治抹茶紅豆乳酪貝果.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">宇治抹茶紅豆乳酪貝果</span></p>
+                                <p><span class="product-title">Matcha, Rea Bean & Cream Cheese</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bagel/巧克力莓莓貝果.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">巧克力莓莓貝果</span></p>
+                                <p><span class="product-title">Chocolate & Mixed Berry Jam</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- section-bread -->
+            <div class="section-bread" id="bread">
+                <!-- section的container -->
+                <div class="container">
+                    <!-- 區塊標題區 -->
+                    <div class="section-header">
+                        <strong class="section-title">真心吐司系列</strong>
+                    </div>
+                    <!-- section-bagel-body -->
+                    <div class="section-body">
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bread/紫心甘藷吐司.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">紫心甘藷吐司</span></p>
+                                <p><span class="product-title">Purple Sweet Potato Fluffy Bread</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bread/蓬鬆原味吐司.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">蓬鬆原味吐司</span></p>
+                                <p><span class="product-title">Simple Fluffy Bread</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bread/義式香草吐司.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">義式香草吐司</span></p>
+                                <p><span class="product-title">Italian Spice Fluffy Bread</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bread/滿滿葡萄吐司.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">滿滿葡萄吐司</span></p>
+                                <p><span class="product-title">Rasin Fluffy Bread</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bread/蜂蜜紅豆吐司.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">蜂蜜紅豆吐司</span></p>
+                                <p><span class="product-title">Honey, Red Bean Fluffy Bread</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bread/亞麻仁籽吐司.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">亞麻仁籽吐司</span></p>
+                                <p><span class="product-title">Flaxseed Fluffy Bread</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bread/楓糖芋頭吐司.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">楓糖芋頭吐司</span></p>
+                                <p><span class="product-title">Taro, Maple Syrup Fluffy Bread</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/bread/葡萄奶酥吐司.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">葡萄奶酥吐司</span></p>
+                                <p><span class="product-title">Crumble & Raisin Fluffy Bread</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- section-tvlr-bread -->
+            <div class="section-tvlr-bread" id="tvlr-bread">
+                <!-- section的container -->
+                <div class="container">
+                    <!-- 區塊標題區 -->
+                    <div class="section-header">
+                        <strong class="section-title">世界探索吐司系列</strong>
+                    </div>
+                    <!-- section-bagel-body -->
+                    <div class="section-body">
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/tvlr-bread/芬蘭極境吐司.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">芬蘭極境吐司</span></p>
+                                <p><span class="product-title">Aurora Cream Bread</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- section-sweets -->
+            <div class="section-sweets" id="sweets">
+                <!-- section的container -->
+                <div class="container">
+                    <!-- 區塊標題區 -->
+                    <div class="section-header">
+                        <strong class="section-title">日法式手作甜點</strong>
+                    </div>
+                    <!-- section-bagel-body -->
+                    <div class="section-body">
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/sweets/太妃生巧克力.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">太妃生巧克力</span></p>
+                                <p><span class="product-title">Toffee Ganache</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/sweets/金磚布朗尼.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">金磚布朗尼</span></p>
+                                <p><span class="product-title">Gold Bar Brownie</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/sweets/紫心甘藷磅蛋糕.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">紫心甘藷磅蛋糕</span></p>
+                                <p><span class="product-title">Purple Sweet Potato Pound Cake</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/sweets/特濃抹茶布朗尼.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">特濃抹茶布朗尼</span></p>
+                                <p><span class="product-title">Uji Matcha Brownie</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/sweets/京都抹茶芝麻磅蛋糕.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">京都抹茶芝麻磅蛋糕</span></p>
+                                <p><span class="product-title">Uji Matcha, Sesame Pound Cake</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/sweets/Sweet Spot經典檸檬塔.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">Sweet Spot經典檸檬塔</span></p>
+                                <p><span class="product-title">Classic Lemon Tart</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/sweets/法式杏仁餡巧克力塔.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">法式杏仁餡巧克力塔</span></p>
+                                <p><span class="product-title">Chocolate Almond Butter Tart</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/sweets/蔓越莓太妃核桃塔.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">蔓越莓太妃核桃塔</span></p>
+                                <p><span class="product-title">Cranberry Toffee Walnut Tart</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/sweets/宇治抹茶塔.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">宇治抹茶塔</span></p>
+                                <p><span class="product-title">Uji Matcha Tart</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/sweets/大顆檸檬塔.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">大顆檸檬塔</span></p>
+                                <p><span class="product-title">Lemon Tart Cake</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-img">
+                                <img src="./img/products/sweets/蜂蜜太妃醬.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">蜂蜜太妃醬</span></p>
+                                <p><span class="product-title">Honey Toffee Sauce</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card hidden">
+                            <div class="product-card-img">
+                                <img src="./img/products/sweets/蔓越莓太妃核桃塔.png" alt="">
+                            </div>
+                            <div class="product-card-text">
+                                <p><span class="product-title">蔓越莓太妃核桃塔</span></p>
+                                <p><span class="product-title">Cranberry Toffee Walnut Tart</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="widgets">
+                    <div class="footer-info">
+                        <div class="footer-info-title">
+                            <strong>Info</strong>
+                        </div>
+                        <div class="footer-info-text">
+                            <a href="">
+                                <div class="footer-info-text-list"><span>關於甜蜜點</span></div>
+                            </a>
+                            <a href="">
+                                <div class="footer-info-text-list"><span>團購、企業採購及訂製</span></div>
+                            </a>
+                            <a href="">
+                                <div class="footer-info-text-list"><span>顧客留言板</span></div>
+                            </a>
+                            <div class="footer-info-text-list"><span>現場貝果出爐時間：中午12點及下午5點</span></div>
+                        </div>
+                    </div>
+                    <div class="footer-contact-us">
+                        <div class="footer-info-title">
+                            <strong>Contact Us</strong>
+                        </div>
+                        <div class="footer-info-text">
+                            <div class="footer-info-text-list"><strong>光明貨櫃總店</strong></div>
+                            <a href="tel:06-2003558">
+                                <div class="footer-info-text-list"><i class="fa-solid fa-phone"></i>
+                                    <span>電話：06-2003558</span></div>
+                            </a>
+                            <a href="https://goo.gl/maps/3FfortRviVxvt8ZJ7" target="_blank">
+                                <div class="footer-info-text-list"><i class="fa-solid fa-location-dot"></i> <span
+                                        style="margin-left: 4px;">地址：台南市東區光明街145號（貨櫃建築）</span></div>
+                            </a>
+                            <div class="footer-info-text-list"><i class="fa-solid fa-clock"></i>
+                                <span>營業時間：12:00-20:00</span></div>
+                        </div>
+                    </div>
+                    <div class="footer-contact-us">
+                        <div class="footer-info-title hidden">
+                            <strong>Contact Us</strong>
+                        </div>
+                        <div class="footer-info-text">
+                            <div class="footer-info-text-list"><strong>西門純白意象店</strong></div>
+                            <a href="tel:06-2228298">
+                                <div class="footer-info-text-list"><i class="fa-solid fa-phone"></i>
+                                    <span>電話：06-2228298</span></div>
+                            </a>
+                            <a href="https://goo.gl/maps/L83RWS2Hgo2mhMLb6" target="_blank">
+                                <div class="footer-info-text-list"><i class="fa-solid fa-location-dot"></i> <span
+                                        style="margin-left: 4px;">地址：台南市南區西門路一段563號</span></div>
+                            </a>
+                            <div class="footer-info-text-list"><i class="fa-solid fa-clock"></i>
+                                <span>營業時間：12:00-20:00</span></div>
+                        </div>
+                    </div>
+                    <div class="footer-follow-us">
+                        <div class="footer-info-title">
+                            <strong>Follow Us</strong>
+                        </div>
+                        <div class="social-media">
+                            <a href="https://www.facebook.com/sweet.spot.top" target="_blank">
+                                <div class="social-media-icon"><i class="fa-brands fa-facebook-f fa-2x"></i></div>
+                            </a>
+                            <a href="https://www.instagram.com/sweetspot920/" target="_blank">
+                                <div class="social-media-icon"><i class="fa-brands fa-instagram fa-2x"></i></div>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCwy3MJXaPj0de0p2cUn9HLw/featured" target="_blank">
+                                <div class="social-media-icon"><i class="fa-brands fa-youtube fa-2x"></i></div>
+                            </a>
+                            <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=sweetspot" target="_blank">
+                                <div class="social-media-icon"><i class="fa-brands fa-line fa-2x"></i></i></div>
+                            </a>
+                        </div>
+                        <div class="find-us">
+                            <div class="find-us-icon">
+                                <span class="material-symbols-rounded">
+                                    search
+                                </span>
+                            </div>
+                            <div class="find-us-text">
+                                <span>Q胖貝果</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- 與body重疊的div.wrapper結束標籤 -->
+    </div>
+
+    <script>
+        // 向下滾動視窗時，導覽列消失
+        var prevScrollpos = 100;
+        window.addEventListener("scroll", function () {
+            var currentScrollPos = window.pageYOffset;
+            // 數字本來是preScrollpos
+            if (400 > currentScrollPos) {
+                document.getElementById("topNav").style.top = "0";
+            } else {
+                document.getElementById("topNav").style.top = "-90px";
+            }
+            prevScrollpos = currentScrollPos;
+        })
+    </script>
+
+</body>
+
+</html>
