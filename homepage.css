@@ -1,0 +1,385 @@
+html {
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+
+/* 底層，避免污染<body> */
+.wrapper {
+    /* 網頁可視最大寬度為1440px */
+    width: 100vw;
+}
+
+.section-Q-slider {
+    display: flex;
+    width: 100vw;
+    max-width: 1920px;
+    /* min-width: 480px; */
+    height: 1000px;
+    padding: 6rem 0px;
+    box-sizing: border-box;
+}
+
+.section-Q-slider .img {
+    position: relative;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider-1 {
+    background-image: url(./img/index/slider/西雅圖焦糖海鹽摩卡核桃.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+/* slider的圖片遮色片 */
+.slider-1-cover {
+    background-image: url(./img/index/slider/西雅圖焦糖海鹽摩卡核桃.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    filter: grayscale(85%)
+}
+
+.slider-2 {
+    background-image: url(./img/index/slider/中秋獻禮.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.slider-2-cover {
+    background-image: url(./img/index/slider/中秋獻禮.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    filter: grayscale(85%)
+}
+
+.slider-3 {
+    background-image: url(./img/index/slider/極境吐司.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.slider-3-cover {
+    background-image: url(./img/index/slider/極境吐司.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    filter: grayscale(85%)
+}
+
+.section-Q-slider .img:hover .img-gradient-cover {
+    opacity: 0;
+    transition-duration: 0.15s;
+}
+
+.img-gradient-cover {
+    position: absolute;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    opacity: 0.38;
+}
+
+.main {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.section-Q-about {
+    display: flex;
+    width: 100%;
+    padding: 6rem 0px;
+}
+
+/* 每個section中的container */
+.container {
+    width: 100%;
+    padding: 0px 2rem;
+}
+
+/* 區域標題的統一格式 */
+.section-header {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: rgb(18, 18, 18);
+    word-spacing: 0.45rem;
+}
+
+.btn-more {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    word-spacing: 0.2rem;
+}
+
+.section-header a:link {
+    color: rgb(97, 91, 85);
+    /* text-decoration: none; */
+}
+
+.section-header a:hover {
+    color: rgb(97, 91, 85);
+    text-decoration: none;
+}
+
+.section-header a:active {
+    color: rgb(97, 91, 85);
+    text-decoration: none;
+}
+
+.section-header a:visited {
+    color: rgb(97, 91, 85);
+    text-decoration: none;
+}
+
+
+.section-Q-about .section-body {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Q-about-card {
+    width: 428px;
+    padding: 1rem;
+}
+
+.Q-about-card img {
+    object-fit: contain;
+    max-width: 428px;
+}
+
+.section-Q-story {
+    display: flex;
+    width: 100%;
+    padding: 6rem 0px;
+}
+
+.section-Q-story .section-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 影片的card */
+.Q-story-card {
+    display: flex;
+    justify-content: space-between;
+    width: 663px;
+    height: 325px;
+    margin-bottom: 48px;
+}
+
+.Q-story-img {
+    width: 325px;
+    height: 325px;
+    position: relative;
+}
+
+.Q-story-img img {
+    object-fit: cover;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+/* Q-story-img的遮色片 */
+.Q-story-img-cover {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* 內容物定位 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Q-story-img:hover .Q-story-img-cover {
+    background: radial-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.5));
+}
+
+/* 設定Q-Story上的icon樣式 */
+.Q-story-img-cover .material-symbols-rounded {
+    color: white;
+    font-size: 5rem;
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 700,
+        'GRAD' 200,
+        'opsz' 48
+}
+
+.Q-story-text {
+    width: 325px;
+    height: 325px;
+}
+
+.Q-story-text-title {
+    margin-bottom: 1rem;
+    padding: 0px 0.5rem;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: justify;
+    color: rgb(18, 18, 18);
+    /* word-spacing: 0.45rem; */
+}
+
+.Q-story-text-body{
+    padding: 0px 0.5rem;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    text-align: justify;
+    color: rgb(97, 91, 85);
+}
+
+.section-Q-promotion {
+    display: flex;
+    width: 100%;
+    padding: 6rem 0px;
+}
+
+.section-Q-promotion .section-body {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Q-promotion-card {
+    width: 325px;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+.Q-promotion-text a:link {
+    text-decoration: none;
+}
+
+.Q-promotion-text a:hover {
+    text-decoration: underline;
+    color: rgb(18, 18, 18);
+}
+
+.Q-promotion-img {
+    width: 100%;
+    height: 310px;
+    overflow: hidden;
+    position: relative;
+}
+
+.Q-promotion-img img {
+    object-fit: top;
+    width: 100%;
+    height: 100%;
+}
+
+.Q-promotion-img-cover {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Q-promotion-img-cover div {
+    width: fit-content;
+    padding: 0.5rem;
+    color: white;
+    background-color: rgb(135, 127, 116);
+}
+
+.Q-promotion-img-cover:hover {
+    background: linear-gradient(-180deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5));
+}
+
+.Q-promotion-text {
+    width: 100%;
+    /* height: 4rem; */
+    margin: 1rem 0px 0px 0px;
+    align-items: center;
+}
+
+.Q-promotion-title {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 2rem;
+    text-align: justify;
+    color: rgb(18, 18, 18);
+}
+
+.Q-promotion-text p {
+    color: darkgray;
+}
+
+.Q-promotion-text .read-more:hover {
+    color: darkgray;
+}
+
+.section-Q-products {
+    display: flex;
+    width: 100%;
+    padding: 6rem 0px;
+}
+
+.section-Q-products .section-body {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Q-products-card {
+    width: 246px;
+}
+
+.section-Q-products .slides a {
+    text-decoration: none;
+}
+
+.Q-products-img {
+    width: 246px;
+    height: 246px;
+}
+
+.Q-products-img img {
+    object-fit: cover;
+    width: 246px;
+}
+
+.Q-products-text {
+    margin: 1rem 0px;
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: rgb(18, 18, 18);
+}
+
+/* Slides箭頭垂直置中 */
+.flexslider {
+    height: 246px;
+}
+
+/* 取消點點 */
+ol {
+    display: none;
+}

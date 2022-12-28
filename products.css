@@ -1,0 +1,263 @@
+html {
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+
+/* 底層，避免污染<body> */
+.wrapper {
+    /* 網頁可視最大寬度為1440px */
+    width: 100vw;
+}
+
+.section-page-header {
+    width: 100vw;
+    margin: 0px auto;
+    padding: 6rem 0px 0px 0px;
+    box-shadow: 0px 4px 8px 0px rgba(168, 168, 168, 0.33);
+    /* background-color: yellowgreen; */
+}
+
+/* 網站表頭空間設定（上下padding） */
+.page-header-container {
+    display: flex;
+    max-width: 1440px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    padding: 10rem 0px 8rem 0px;
+    /* background-color: antiquewhite; */
+}
+
+/* 網站表頭文字格式設定 */
+.header-title {
+    width: 1380px;
+    padding: 0px 2rem;
+    text-align: center;
+}
+
+/* 網頁主標題 */
+.page-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    color: rgb(18, 18, 18);
+}
+
+/* 網站位置指引 */
+.site-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.site-map a:link {
+    color: darkgray;
+    text-decoration: none;
+}
+
+.site-map a:hover {
+    color: darkgray;
+    text-decoration: none;
+}
+
+.site-map a:active {
+    color: darkgray;
+    text-decoration: none;
+}
+
+.site-map a:visited {
+    color: darkgray;
+    text-decoration: none;
+}
+
+.sub-title {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem;
+    border-style: solid none;
+    border-width: 0.8px;
+    border-color: lightgray;
+    color: rgb(97, 91, 85);
+}
+
+.product-nav {
+    max-width: 1440px;
+    height: 4rem;
+    position: sticky;
+    top: 0px;
+    /* background-color: white; */
+    margin: 0px auto;
+}
+
+.product-nav-container {
+    display: flex;
+    justify-content: center;
+    line-height: 4rem;
+    /* align-items: center; */
+    width: auto;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    /* background-color: blueviolet; */
+}
+
+.product-nav-container a:link {
+    color: rgb(135, 127, 116);
+    text-decoration: none;
+}
+
+.product-nav-container a:hover {
+    color: rgb(135, 127, 116);
+    text-decoration: none;
+}
+
+.product-nav-container a:active {
+    color: rgb(135, 127, 116);
+    text-decoration: none;
+}
+
+.product-nav-container a:visited {
+    color: rgb(135, 127, 116);
+    text-decoration: none;
+}
+
+.sub-nav-btn {
+    flex: 1;
+    height: 4rem;
+    margin: 0px 1.5rem;
+}
+
+/* 商品導覽列懸浮效果 */
+.sub-nav-btn:hover {
+    box-sizing: border-box;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: rgb(107, 64, 36);
+    color: rgb(107, 64, 36);
+}
+
+/* 用main定義section的邊界並置中 */
+.main {
+    margin: 0px auto;
+    max-width: 1440px;
+}
+
+/* 每個section中的container */
+.container {
+    width: 100%;
+    padding: 0px 2rem;
+}
+
+.section-best-sale {
+    display: flex;
+    width: 100%;
+    padding: 6rem 0px;
+}
+
+/* 區塊標題區 */
+.section-header {
+    width: 100%;
+    padding-bottom: 1rem;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: rgb(97, 91, 85);
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+/* 區塊內的標題 */
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(97, 91, 85);
+    word-spacing: 0.3rem;
+}
+
+/* 區塊內容區 */
+.section-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.product-card {
+    width: 325px;
+    margin-bottom: 1rem;
+}
+
+.product-card-img {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 10%;
+    /* 設定hover動畫 */
+    overflow: hidden;
+    /* 隱藏圖片放大效果的多餘部分 */
+    transition-duration: 0.5s;
+    /* 變形效果所需時長（圖片放大） */
+    transition-property: all;
+    /* 指定變形效果 */
+}
+
+.product-card:hover .product-card-img {
+    transform: scale(1.05);
+    /* 設定transition用的變形效果（圖片hover時放大） */
+}
+
+.product-card-img img {
+    object-fit: cover;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.product-card-text {
+    width: 100%;
+    height: 100px;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: rgb(97, 91, 85);
+}
+
+.product-card:hover .product-card-text {
+    color: rgb(18, 18, 18);
+    font-weight: 500;
+}
+
+.product-card-text p {
+    margin: 0.5rem 0px;
+}
+
+.section-bagel {
+    display: flex;
+    width: 100%;
+    padding: 6rem 0px;
+}
+
+.section-bread {
+    display: flex;
+    width: 100%;
+    padding: 6rem 0px;
+}
+
+.section-tvlr-bread {
+    display: flex;
+    width: 100%;
+    padding: 6rem 0px;
+}
+
+.section-sweets {
+    display: flex;
+    width: 100%;
+    padding: 6rem 0px;
+}

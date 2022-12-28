@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甜蜜點 the SweetSpot｜Q胖貝果</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- 導覽列字體 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- 標題字體 -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- google icon: 放大鏡圖案(static)) -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- google icon播放圖案(可調整樣式) -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <style>
+        @import url(./normalize.css);
+        @import url(./common.css);
+        @import url(./homepage.css);
+    </style>
+
+    <!-- 載入通用JaveScript -->
+    <script src="./common.js"></script>
+    <!-- 載入fontawesome kit's code -->
+    <script src="https://kit.fontawesome.com/4a8074f175.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery.flexslider css -->
+    <link href="https://cdn.bootcss.com/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
+    <!-- jQuery.flexslider js -->
+    <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/flexslider/2.6.3/jquery.flexslider-min.js"></script>
+
+</head>
+
+<body>
+    <!-- 設置與body重疊的div.wrapper，避免污染<body> -->
+    <div class="wrapper">
+        <!-- 設置header區塊，內包導覽列 -->
+        <header class="header" id="topNav">
+            <div class="header-container">
+                <div class="topnav">
+                    <div class="left-area">
+                        <a href="#Q-about">
+                            <div class="nav-btn">ABOUT US</div>
+                        </a>
+                        <a href="#Q-story">
+                            <div class="nav-btn">Q胖 STORY</div>
+                        </a>
+                        <a href="#Q-products">
+                            <div class="nav-btn">PRODUCTS</div>
+                        </a>
+                    </div>
+                    <div class="logo">
+                        <a href="./homepage.html">
+                            <img src="./img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="right-area">
+                        <a href="">
+                            <div class="nav-btn">STORE</div>
+                        </a>
+                        <a href="">
+                            <div class="nav-btn">常見問題 Q&A</div>
+                        </a>
+                        <!-- 搜尋功能：全頁式 -->
+                        <div id="myOverlay" class="overlay">
+                            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                            <div class="overlay-content">
+                                <form action="">
+                                    <input type="text" placeholder="Search.." name="search">
+                                    <button type="submit">
+                                        <span class="material-symbols-rounded">
+                                            Search
+                                        </span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="nav-btn openBtn" onclick="openSearch()">
+                            <span class="material-symbols-rounded">
+                                Search
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- top按鈕 -->
+        <a href="#" class="back-to-top">
+            <div class="topBtn">
+                <i class="fa-solid fa-angle-up fa-2x"></i>
+            </div>
+        </a>
+        <!-- div.section-Q-slider輪播圖區 -->
+        <div class="section-Q-slider">
+            <!-- 點div能連結新頁面 -->
+            <!-- .img slider-1是原色海報背景圖 -->
+            <div class="img slider-1">
+                <!-- .slider-1-cover是暗色遮色片 .img-gradient-cover是暗色遮色片的動畫設定，hover時變不見 -->
+                <a href="">
+                    <div class="img-gradient-cover slider-1-cover"></div>
+                </a>
+            </div>
+            <div class="img slider-2">
+                <a href="">
+                    <div class="img-gradient-cover slider-2-cover"></div>
+                </a>
+            </div>
+            <div class="img slider-3">
+                <a href="">
+                    <div class="img-gradient-cover slider-3-cover"></div>
+                </a>
+            </div>
+        </div>
+        <div class="main">
+            <!-- 所有的空間都用div.section區隔，一個接一個 -->
+            <!-- section-Q-about -->
+            <div class="section-Q-about" id="Q-about">
+                <div class="container">
+                    <!-- 區塊標題列＋看更多連結鈕 -->
+                    <div class="section-header">
+                        <h2 class="section-title">
+                            <strong>ABOUT US</strong>
+                        </h2>
+                        <a href="" class="btn-more">
+                            <span>SHOW MORE</span>
+                        </a>
+                    </div>
+                    <div class="section-body">
+                        <div class="Q-about-card">
+                            <a href="">
+                                <img src="./img/index/about_us/Q胖貝果的誕生.png" alt="" class="Q-about-img">
+                            </a>
+                        </div>
+                        <div class="Q-about-card">
+                            <a href="">
+                                <img src="./img/index/about_us/排隊美食.png" alt="" class="Q-about-img">
+                            </a>
+                        </div>
+                        <div class="Q-about-card">
+                            <a href="">
+                                <img src="./img/index/about_us/食材嚴選.png" alt="" class="Q-about-img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-Q-story" id="Q-story">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">
+                            <strong>Q胖 STORY</strong>
+                        </h2>
+                        <a href="" class="btn-more">
+                            <span>SHOW MORE</span>
+                        </a>
+                    </div>
+                    <div class="section-body">
+                        <div class="Q-story-card">
+                            <a href="https://youtu.be/hb4kUUrqEF8" target="_blank">
+                                <div class="Q-story-img">
+                                    <img src="./img/index/Q_story/美的in台灣.png" alt="年代MUCH台-美的in台灣">
+                                    <div class="Q-story-img-cover">
+                                        <span class="material-symbols-rounded">
+                                            play_arrow
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="Q-story-text">
+                                <div class="Q-story-text-title">
+                                    <span>年代MUCH台 美的in台灣</span>
+                                </div>
+                                <div class="Q-story-text-body">
+                                    <p>
+                                        「Sweet Spot」 - 我們期望能與大家在這找到烘焙的「甜蜜點」。
+                                    </p>
+                                    <p>
+                                        從喜歡甜點的心情，到愛上手作的風味，延續食安的重要性，我們專注食材的品質，發展出天然手作的精神，我們希望能夠匯聚這樣的信念，收集笑容、歡樂。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Q-story-card">
+                            <a href="https://youtu.be/mSxeGDimmd0" target="_blank">
+                                <div class="Q-story-img">
+                                    <img src="./img/index/Q_story/檸檬美食頻道.png" alt="年代MUCH台-美的in台灣">
+                                    <div class="Q-story-img-cover">
+                                        <span class="material-symbols-rounded">
+                                            play_arrow
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="Q-story-text">
+                                <div class="Q-story-text-title">
+                                    <span>製作各種美味的日式貝果，好吃到連隋棠都大力推薦的人氣名店！</span>
+                                </div>
+                                <div class="Q-story-text-body">
+                                    <p>
+                                        日賣2500顆！
+                                        <br>
+                                        超好吃的日式貝果製作達人！
+                                    </p>
+                                    <p>
+                                        加入許多台灣特色口味，相較於美式貝果更柔軟蓬鬆，不管當作早餐或是下午茶都好吃又方便👍
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- div.section-Q-promotion -->
+            <div class="section-Q-promotion" id="Q-promotion">
+                <div class="container">
+                    <!-- 區塊標題列＋看更多連結鈕 -->
+                    <div class="section-header">
+                        <h2 class="section-title">
+                            <strong>PROMOTION</strong>
+                        </h2>
+                        <a href="" class="btn-more">
+                            <span>SHOW MORE</span>
+                        </a>
+                    </div>
+                    <div class="section-body">
+                        <div class="Q-promotion-card">
+                            <a href="">
+                                <div class="Q-promotion-img">
+                                    <img src="./img/index/Q_promotion/買十送一.png" alt="買十送一">
+                                    <div class="Q-promotion-img-cover">
+                                        <div>進行中</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="Q-promotion-text">
+                                <a href="">
+                                    <strong class="Q-promotion-title">即日起！宅配貝果買10送1❤️隨機贈送熱門口味！</strong>
+                                </a>
+                                <a href="" class="read-more"><p>閱讀更多⋯</p></a>
+                            </div>
+                        </div>
+                        <div class="Q-promotion-card">
+                            <a href="">
+                                <div class="Q-promotion-img">
+                                    <img src="./img/index/Q_promotion/運費規則.png" alt="運費規則">
+                                    <div class="Q-promotion-img-cover">
+                                        <div>進行中</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="Q-promotion-text">
+                                    <a href="">
+                                        <strong class="Q-promotion-title">運費規則新上線！運費單筆200元，滿1200元運費100元</strong>
+                                    </a>
+                                    <a href="" class="read-more"><p>閱讀更多⋯</p></a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="Q-promotion-card">
+                            <a href="">
+                                <div class="Q-promotion-img">
+                                    <img src="./img/index/Q_promotion/限時免運.png" alt="限時免運">
+                                    <div class="Q-promotion-img-cover">
+                                        <div>進行中</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="Q-promotion-text">
+                                    <a href="">
+                                        <strong class="Q-promotion-title">SALE⏰官網訂單滿799元限時免運！</strong>
+                                    </a>
+                                    <a href="" class="read-more"><p>閱讀更多⋯</p></a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="Q-promotion-card">
+                            <a href="">
+                                <div class="Q-promotion-img">
+                                    <img src="./img/index/Q_promotion/伯爵蜜桃奶油貝果海報.png" alt="新品上市">
+                                    <div class="Q-promotion-img-cover">
+                                        <div>進行中</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="Q-promotion-text">
+                                    <a href="">
+                                        <strong class="Q-promotion-title">查爾斯格雷伯爵私心推薦❤️伯爵蜜桃奶油貝果新上市！</strong>
+                                    </a>
+                                    <a href="" class="read-more"><p>閱讀更多⋯</p></a>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="section-Q-products" id="Q-products">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">
+                            <strong>PRODUCTS</strong>
+                        </h2>
+                        <a href="./products.html" class="btn-more">
+                            <span>SHOW MORE</span>
+                        </a>
+                    </div>
+                    <div class=" flexslider ">
+
+                        <ul class="slides">
+                            <li>
+                                <a href="./products.html#bagel">
+                                    <div class="Q-products-card">
+                                        <div class="Q-products-img">
+                                            <img src="./img/index/products/新品貝果.png" alt="">
+                                        </div>
+                                        <div class="Q-products-text">Q胖貝果</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./products.html#bread">
+                                    <div class="Q-products-card">
+                                        <div class="Q-products-img">
+                                            <img src="./img/index/products/蜂蜜紅豆吐司.png" alt="">
+                                        </div>
+                                        <div class="Q-products-text">真心吐司系列</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./products.html#tvlr-bread">
+                                    <div class="Q-products-card">
+                                        <div class="Q-products-img">
+                                            <img src="./img/index/products/芬蘭極境吐司.png" alt="">
+                                        </div>
+                                        <div class="Q-products-text">世界探索吐司系列</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./products.html#sweets">
+                                    <div class="Q-products-card">
+                                        <div class="Q-products-img">
+                                            <img src="./img/index/products/法式杏仁餡巧克力塔.png" alt="">
+                                        </div>
+                                        <div class="Q-products-text">日法式手作甜點</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="Q-products-card">
+                                    <div class="Q-products-img">
+                                        <img src="./img/index/products/流心蛋黃酥.png" alt="">
+                                    </div>
+                                    <div class="Q-products-text">甜蜜點中秋獻禮</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="Q-products-card">
+                                    <div class="Q-products-img">
+                                        <img src="./img/index/products/紫心甘藷磅蛋糕.png" alt="">
+                                    </div>
+                                    <div class="Q-products-text">彌月專區</div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="widgets">
+                    <div class="footer-info">
+                        <div class="footer-info-title">
+                            <strong>Info</strong>
+                        </div>
+                        <div class="footer-info-text">
+                            <a href="">
+                                <div class="footer-info-text-list"><span>關於甜蜜點</span></div>
+                            </a>
+                            <a href="">
+                                <div class="footer-info-text-list"><span>團購、企業採購及訂製</span></div>
+                            </a>
+                            <a href="">
+                                <div class="footer-info-text-list"><span>顧客留言板</span></div>
+                            </a>
+                            <div class="footer-info-text-list"><span>現場貝果出爐時間：中午12點及下午5點</span></div>
+                        </div>
+                    </div>
+                    <div class="footer-contact-us">
+                        <div class="footer-info-title">
+                            <strong>Contact Us</strong>
+                        </div>
+                        <div class="footer-info-text">
+                            <div class="footer-info-text-list"><strong>光明貨櫃總店</strong></div>
+                            <a href="tel:06-2003558">
+                                <div class="footer-info-text-list"><i class="fa-solid fa-phone"></i>
+                                    <span>電話：06-2003558</span>
+                                </div>
+                            </a>
+                            <a href="https://goo.gl/maps/3FfortRviVxvt8ZJ7" target="_blank">
+                                <div class="footer-info-text-list"><i class="fa-solid fa-location-dot"></i> <span
+                                        style="margin-left: 4px;">地址：台南市東區光明街145號（貨櫃建築）</span></div>
+                            </a>
+                            <div class="footer-info-text-list"><i class="fa-solid fa-clock"></i>
+                                <span>營業時間：12:00-20:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-contact-us">
+                        <div class="footer-info-title hidden">
+                            <strong>Contact Us</strong>
+                        </div>
+                        <div class="footer-info-text">
+                            <div class="footer-info-text-list"><strong>西門純白意象店</strong></div>
+                            <a href="tel:06-2228298">
+                                <div class="footer-info-text-list"><i class="fa-solid fa-phone"></i>
+                                    <span>電話：06-2228298</span>
+                                </div>
+                            </a>
+                            <a href="https://goo.gl/maps/L83RWS2Hgo2mhMLb6" target="_blank">
+                                <div class="footer-info-text-list"><i class="fa-solid fa-location-dot"></i> <span
+                                        style="margin-left: 4px;">地址：台南市南區西門路一段563號</span></div>
+                            </a>
+                            <div class="footer-info-text-list"><i class="fa-solid fa-clock"></i>
+                                <span>營業時間：12:00-20:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-follow-us">
+                        <div class="footer-info-title">
+                            <strong>Follow Us</strong>
+                        </div>
+                        <div class="social-media">
+                            <a href="https://www.facebook.com/sweet.spot.top" target="_blank">
+                                <div class="social-media-icon"><i class="fa-brands fa-facebook-f fa-2x"></i></div>
+                            </a>
+                            <a href="https://www.instagram.com/sweetspot920/" target="_blank">
+                                <div class="social-media-icon"><i class="fa-brands fa-instagram fa-2x"></i></div>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCwy3MJXaPj0de0p2cUn9HLw/featured" target="_blank">
+                                <div class="social-media-icon"><i class="fa-brands fa-youtube fa-2x"></i></div>
+                            </a>
+                            <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=sweetspot" target="_blank">
+                                <div class="social-media-icon"><i class="fa-brands fa-line fa-2x"></i></i></div>
+                            </a>
+                        </div>
+                        <div class="find-us">
+                            <div class="find-us-icon">
+                                <span class="material-symbols-rounded">
+                                    search
+                                </span>
+                            </div>
+                            <div class="find-us-text">
+                                <span>Q胖貝果</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- 與body重疊的div.wrapper結束標籤 -->
+    </div>
+
+    <script>
+        // 向下滾動視窗時，導覽列消失
+        var prevScrollpos = 100;
+        window.addEventListener("scroll", function () {
+            var currentScrollPos = window.pageYOffset;
+            // 數字本來是preScrollpos
+            if (800 > currentScrollPos) {
+                document.getElementById("topNav").style.top = "0";
+            } else {
+                document.getElementById("topNav").style.top = "-90px";
+            }
+            prevScrollpos = currentScrollPos;
+        })
+
+        // Slides設定
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                animationLoop: true,
+                slideshow: true,
+                slideshowSpeed: 8000,                
+                itemWidth: 246,
+                itemMargin: 5,
+                minItems: 2,
+                maxItems: 5,
+            });
+        });
+    </script>
+
+</body>
+
+</html>

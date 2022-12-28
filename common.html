@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <style>
+        @import url(./normalize.css);
+        @import url(./common.css);
+        @import url(./products.css);
+    </style>
+
+    <!-- 載入通用JaveScript -->
+    <script src="./common.js"></script>
+    <!-- 載入fontawesome kit's code -->
+    <script src="https://kit.fontawesome.com/4a8074f175.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- 設置與body重疊的div.wrapper，避免污染<body> -->
+    <div class="wrapper">
+        <!-- 設置header區塊，內包導覽列 -->
+        <header class="header">
+            <div class="header-container">
+                <div class="topnav">
+                    <div class="left-area">
+                        <a href="#Q-about">
+                            <div class="nav-btn">ABOUT Q胖</div>
+                        </a>
+                        <a href="#Q-story">
+                            <div class="nav-btn">Q胖 STORY</div>
+                        </a>
+                        <a href="#Q-products">
+                            <div class="nav-btn">PRODUCTS</div>
+                        </a>
+                    </div>
+                    <div class="logo">
+                        <a href="./homepage.html">
+                            <img src="./img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="right-area">
+                        <a href="">
+                            <div class="nav-btn">STORE</div>
+                        </a>
+                        <a href="">
+                            <div class="nav-btn">常見問題 Q&A</div>
+                        </a>
+                        <!-- 搜尋功能：全頁式 -->
+                        <div id="myOverlay" class="overlay">
+                            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                            <div class="overlay-content">
+                                <form action="/action_page.php">
+                                    <input type="text" placeholder="Search.." name="search">
+                                    <button type="submit">
+                                        search
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="nav-btn openBtn" onclick="openSearch()">
+                            <span class="material-symbols-rounded">
+                                Search
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="widgets">
+                    <div class="footer-info">
+                        <div class="footer-info-title">
+                            <strong>Info</strong>
+                        </div>
+                        <div class="footer-info-text">
+                            <a href="">
+                                <div class="footer-info-text-list"><span>關於甜蜜點</span></div>
+                            </a>
+                            <a href="">
+                                <div class="footer-info-text-list"><span>團購、企業採購及訂製</span></div>
+                            </a>
+                            <a href="">
+                                <div class="footer-info-text-list"><span>顧客留言板</span></div>
+                            </a>
+                            <div class="footer-info-text-list"><span>現場貝果出爐時間：中午12點及下午5點</span></div>
+                        </div>
+                    </div>
+                    <div class="footer-contact-us">
+                        <div class="footer-info-title">
+                            <strong>Contact Us</strong>
+                        </div>
+                        <div class="footer-info-text">
+                            <div class="footer-info-text-list"><strong>光明貨櫃總店</strong></div>
+                            <a href="tel:06-2003558">
+                                <div class="footer-info-text-list"><i class="fa-solid fa-phone"></i> <span>電話：06-2003558</span></div>
+                            </a>
+                            <a href="https://goo.gl/maps/3FfortRviVxvt8ZJ7">
+                                <div class="footer-info-text-list"><i class="fa-solid fa-location-dot"></i> <span style="margin-left: 4px;">地址：台南市東區光明街145號（貨櫃建築）</span></div>
+                            </a>
+                            <div class="footer-info-text-list"><i class="fa-solid fa-clock"></i> <span>營業時間：12:00-20:00</span></div>
+                        </div>
+                    </div>
+                    <div class="footer-contact-us">
+                        <div class="footer-info-title hidden">
+                            <strong>Contact Us</strong>
+                        </div>
+                        <div class="footer-info-text">
+                            <div class="footer-info-text-list"><strong>西門純白意象店</strong></div>
+                            <a href="tel:06-2228298">
+                                <div class="footer-info-text-list"><i class="fa-solid fa-phone"></i> <span>電話：06-2228298</span></div>
+                            </a>
+                            <a href="https://goo.gl/maps/L83RWS2Hgo2mhMLb6">
+                                <div class="footer-info-text-list"><i class="fa-solid fa-location-dot"></i> <span style="margin-left: 4px;">地址：台南市南區西門路一段563號</span></div>
+                            </a>
+                            <div class="footer-info-text-list"><i class="fa-solid fa-clock"></i> <span>營業時間：12:00-20:00</span></div>
+                        </div>
+                    </div>
+                    <div class="footer-follow-us">
+                        <div class="footer-info-title">
+                            <strong>Follow Us</strong>
+                        </div>
+                        <div class="social-media">
+                            <a href="https://www.facebook.com/sweet.spot.top" target="_blank">
+                                <div class="social-media-icon"><i class="fa-brands fa-facebook-f fa-2x"></i></div>
+                            </a>
+                            <a href="https://www.instagram.com/sweetspot920/" target="_blank">
+                                <div class="social-media-icon"><i class="fa-brands fa-instagram fa-2x"></i></div>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCwy3MJXaPj0de0p2cUn9HLw/featured" target="_blank">
+                                <div class="social-media-icon"><i class="fa-brands fa-youtube fa-2x"></i></div>
+                            </a>
+                            <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=sweetspot" target="_blank">
+                                <div class="social-media-icon"><i class="fa-brands fa-line fa-2x"></i></i></div>
+                            </a>
+                        </div>
+                        <div class="find-us">
+                            <div class="find-us-icon">
+                                <span class="material-symbols-rounded">
+                                    search
+                                    </span>
+                            </div>
+                            <div class="find-us-text">
+                                <span>Q胖貝果</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- 與body重疊的div.wrapper結束標籤 -->
+    </div>
+</body>
+
+</html>
